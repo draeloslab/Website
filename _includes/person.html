@@ -1,0 +1,12 @@
+            <div id="{{ person.name | slugify }}" class="col-lg-4 mt-5 align-self-center">
+                <img class="img img-fluid rounded mb-2 mb-lg-0" src="{{ person.photo }}" />
+            </div>
+            <div class="col-lg-8 mt-lg-5 align-self-center">
+                <h3>{{ person.name }}</h3>
+                <p class="lead">
+                    {{ person.role }}
+                </p>
+                <p>
+                    {{ person }}
+                </p>
+            </div>

@@ -1,0 +1,8 @@
+- name: Home
+  link: /
+- name: Research
+  link: /research/
+- name: People
+  link: /people/
+- name: Publications
+  link: /publications/

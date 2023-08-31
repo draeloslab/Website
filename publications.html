@@ -1,0 +1,24 @@
+---
+layout: default
+title: Publications
+permalink: /publications/
+---
+<section>
+    <div class="container px-4">
+        <div class="row gx-4">
+            <div class="col-lg-12">
+                <h1>Publications</h1>
+
+                <h3>Journal</h3>
+                {% bibliography --query @article %}
+
+                <h3>Conference</h3>
+                {% bibliography --query @inproceedings %}
+
+                <h3>Patents</h3>
+                {% bibliography --query @patent %}
+
+            </div>
+        </div>
+    </div>
+</section>

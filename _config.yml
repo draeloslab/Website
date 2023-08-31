@@ -1,0 +1,11 @@
+lab_name: Draelos Lab
+lab_short_name: Draelos Lab
+
+collections:
+  projects:
+  persons:
+
+scholar:
+  style: _bibliography/chicago.cls
+  sort_by: year,month,day,authors
+  order: descending

@@ -1,0 +1,60 @@
+---
+layout: default
+title: People
+permalink: /people/
+---
+<section>
+    <div class="container px-4">
+        <div class="row gx-4">
+    {% for role in site.data.roles %}
+        {% if role == "Principal Investigator" %}
+            {% assign persons = site.persons | where: "active", "true" | where: "role", role | sort: "name" %}
+            {% for person in persons %}
+                {% include person.html %}
+            {% endfor %}
+        {% endif %}
+    {% endfor %}
+        </div>
+    </div>
+</section>
+
+<section>
+    <div class="container px-4">
+        <div class="row gx-4">
+            <div class="col-lg-12">
+                <h1>Current Members</h1>
+            </div>
+        </div>
+        <div class="row gx-4">
+    {% for role in site.data.roles %}
+        {% if role != "Principal Investigator" %}
+            {% assign persons = site.persons | where: "active", "true" | where: "role", role | sort: "name" %}
+            {% for person in persons %}
+                {% include person.html %}
+            {% endfor %}
+        {% endif %}
+    {% endfor %}
+        </div>
+    </div>
+</section>
+
+{% assign persons = site.persons | sort: "name" | where: "active", "false" %}
+}
+{% if persons.size > 0 %}
+<section>
+    <div class="container px-4">
+        <div class="row gx-4">
+            <div class="col-lg-12">
+                <h1>Alumni</h1>
+            </div>
+        </div>
+        <ul>
+        {% for person in persons %}
+            <li>
+                {{ person.name }} &mdash; {{ person.role }}
+            </li>
+        {% endfor %}
+        </ul>
+    </div>
+</section>
+{% endif %}
