@@ -29,8 +29,7 @@ permalink: /people/
     {% for role in site.data.roles %}
         {% if role != "Principal Investigator" %}
             {% assign persons = site.persons | where: "active", "true" | where: "role", role | sort: "name" %}
-            {% assign sorted_persons = persons | sort: "name" | sort: "last_name" %}
-            {% for person in sorted_persons %}
+            {% for person in persons %}
                 {% include person.html %}
             {% endfor %}
         {% endif %}
@@ -40,7 +39,7 @@ permalink: /people/
 </section>
 
 {% assign persons = site.persons | sort: "name" | where: "active", "false" %}
-}
+
 {% if persons.size > 0 %}
 <section>
     <div class="container px-4">
