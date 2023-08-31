@@ -29,7 +29,8 @@ permalink: /people/
     {% for role in site.data.roles %}
         {% if role != "Principal Investigator" %}
             {% assign persons = site.persons | where: "active", "true" | where: "role", role | sort: "name" %}
-            {% for person in persons %}
+            {% assign sorted_persons = persons | sort: "name" | sort: "last_name" %}
+            {% for person in sorted_persons %}
                 {% include person.html %}
             {% endfor %}
         {% endif %}
