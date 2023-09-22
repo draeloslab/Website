@@ -29,23 +29,63 @@
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
         <div class="collapse navbar-collapse" id="navbarResponsive">
             <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                    <a class="nav-link " href="/">
+                        Home
+                    </a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="researchDropdown" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Research
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="researchDropdown">
+                        
+                            
+                                
+                                <a class="dropdown-item" href="/research/#project-">Bayesian optimization for visual stimuli</a>
+                            
+                        
+                            
+                        
+                            
+                        
+                            
+                                
+                                <a class="dropdown-item" href="/research/#project-">Latent neural/behavioral modeling</a>
+                            
+                        
+                            
+                                
+                                <a class="dropdown-item" href="/research/#project-">Real-time BCI with neural stimulations</a>
+                            
+                        
+                    </div>
+                </li>
                 
-                <li class="nav-item"><a class="nav-link " href="/">
-                Home</a></li>
+                    <li class="nav-item">
+                        <a class="nav-link " href="/people/">
+                            People
+                        </a>
+                    </li>
                 
-                <li class="nav-item"><a class="nav-link " href="/research/">
-                Research</a></li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="/publications/">
+                            Publications
+                        </a>
+                    </li>
                 
-                <li class="nav-item"><a class="nav-link " href="/people/">
-                People</a></li>
+                    <li class="nav-item">
+                        <a class="nav-link " href="https://github.com/draeloslab/wiki/wiki">
+                            Wiki
+                        </a>
+                    </li>
                 
-                <li class="nav-item"><a class="nav-link active" href="/publications/">
-                Publications</a></li>
                 
             </ul>
         </div>
     </div>
 </nav>
+
         <!-- Header-->
         <header class="text-white" style="background-color: #00274C;">
             <div class="backdrop">
@@ -68,80 +108,39 @@
             <div class="col-lg-12">
                 <h1>Publications</h1>
 
-                <!-- <h3>Journal</h3>
-                <ol class="bibliography"><li><span id="Song2023Robotic">Song, Ailin, Kyung-Min Roh, Jay B. Lusk, Nita G. Valikodath, Eleonora M. Lad, Mark Draelos, Pablo Ortiz, et al. 2023. &ldquo;<a href="https://doi.org/10.1016/j.annemergmed.2022.10.016">Robotic Optical Coherence Tomography Retinal Imaging for Emergency Department Patients: A Pilot Study for Emergency Physicians’ Diagnostic Performance</a>.&rdquo; <i>Annals of Emergency Medicine</i>.</span></li>
-<li><span id="Draelos2023Spiral">Draelos, Mark. 2023. &ldquo;<a href="https://doi.org/10.1109/LRA.2023.3240361">Time-Optimal Spiral Trajectories with Closed-Form Solutions</a>.&rdquo; <i>IEEE Robotics and Automation Letters</i>.</span></li>
-<li><span id="Draelos2022Adaptive">Draelos, Mark, Christian Viehland, Ryan P. McNabb, Anthony N. Kuo, and Joseph A. Izatt. 2022. &ldquo;<a href="https://doi.org/10.1364/OPTICA.472562">Adaptive Point-Scan Imaging beyond the Frame Rate-Resolution Limit with Scene-Reactive Scan Trajectories</a>.&rdquo; <i>Optica</i> 9 (11): 1276–88.</span></li>
-<li><span id="Tian2022Refraction">Tian, Yuan, Mark Draelos, Ryan P. McNabb, Kris Hauser, Anthony N. Kuo, and Joseph A. Izatt. 2022. &ldquo;<a href="https://doi.org/10.1364/BOE.464762">Optical Coherence Tomography Refraction and Optical Path Length Correction for Image-Guided Corneal Surgery</a>.&rdquo; <i>Biomedical Optics Express</i> 13 (9): 5035–49.</span></li>
-<li><span id="Zhang2022Lidar">Zhang, Jingkai, Ruobing Qian, Kevin C. Zhou, Christian Viehland, Mark Draelos, Al-Hafeez Dhalla, and Joseph A. Izatt. 2022. &ldquo;<a href="https://doi.org/10.1364/OL.463965">Real-Time Wide-Field Spectral-Scanning FMCW Coherent 3D Imaging and Velocimetry</a>.&rdquo; <i>Optics Letters</i> 47 (16): 4064–67.</span></li>
-<li><span id="EdwardsRAL2022DALK">Edwards, William, Gao Tang, Yuan Tian, Mark Draelos, Joseph Izatt, Anthony Kuo, and Kris Hauser. 2022. &ldquo;<a href="https://doi.org/10.1109/LRA.2022.3140458">Data-Driven Modelling and Control for Robot Needle Insertion in Deep Anterior Lamellar Keratoplasty</a>.&rdquo; <i>IEEE Robotics and Automation Letters</i> 7: 1526–33.</span></li>
-<li><span id="OrtizBOE2021RAOCT">Ortiz, Pablo, Mark Draelos, Christian Viehland, Ruobing Qian, Ryan P. McNabb, Anthony N. Kuo, and Joseph A. Izatt. 2021. &ldquo;<a href="https://doi.org/10.1364/BOE.443537">Robotically Aligned Optical Coherence Tomography with 5 Degree of Freedom Eye Tracking for Subject Motion and Gaze Compensation</a>.&rdquo; <i>Biomedical Optics Express</i> 12 (12): 7361–76.</span></li>
-<li><span id="DraelosNBME2021RAOCT">Draelos, Mark, Pablo Ortiz, Ruobing Qian, Christian Viehland, Ryan McNabb, Kris Hauser, Anthony N Kuo, and Joseph A Izatt. 2021. &ldquo;<a href="https://doi.org/10.1038/s41551-021-00753-6">Contactless Optical Coherence Tomography of the Eyes of Freestanding Individuals with a Robotic Scanner</a>.&rdquo; <i>Nature Biomedical Engineering</i> 5 (7): 726–36.</span></li>
-<li><span id="DraelosTBME2020DALK">Draelos, Mark, Gao Tang, Brenton Keller, Anthony Kuo, Kris Hauser, and Joseph A. Izatt. 2020. &ldquo;<a href="https://doi.org/10.1109/TBME.2019.2954505">Optical Coherence Tomography Guided Robotic Needle Insertion for Deep Anterior Lamellar Keratoplasty</a>.&rdquo; <i>IEEE Transactions on Biomedical Engineering</i> 67 (7): 2073–83.</span></li>
-<li><span id="KellerDrLfD2020">Keller, Brenton, Mark Draelos, Kevin Zhou, Anthony Kuo, George Konidaris, Kris Hauser, and Joseph Izatt. 2020. &ldquo;<a href="https://doi.org/10.1109/TRO.2020.2980158">OCT Guided Robotic Ophthalmic Microsurgery via Reinforcement Learning from Demonstrations</a>.&rdquo; <i>IEEE Transactions on Robotics</i> 36 (4): 1207–18.</span></li>
-<li><span id="DraelosBOE2018VR">Draelos, Mark, Brenton Keller, Christian Viehland, Oscar M. Carrasco-Zevallos, Anthony Kuo, and Joseph Izatt. 2018. &ldquo;<a href="https://doi.org/10.1364/BOE.9.002825">Real-Time Visualization and Interaction with Static and Live Optical Coherence Tomography Volumes in Immersive Virtual Reality</a>.&rdquo; <i>Biomedical Optical Express</i> 9 (6): 2825–43.</span></li>
-<li><span id="KellerBOE2018Tracking">Keller, Brenton, Mark Draelos, Gao Tang, Sina Farsiu, Anthony N. Kuo, Kris Hauser, and Joseph A. Izatt. 2018. &ldquo;<a href="https://doi.org/10.1364/BOE.9.002716">Real-Time Corneal Segmentation and 3D Needle Tracking in Intrasurgical OCT</a>.&rdquo; <i>Biomedical Optics Express</i> 9 (6): 2716–32.</span></li>
-<li><span id="ZevallosBOE2017MIOCT">Carrasco-Zevallos, Oscar M., Christian Viehland, Brenton Keller, Mark Draelos, Anthony N. Kuo, Cynthia A. Toth, and Joseph A. Izatt. 2017. &ldquo;<a href="https://doi.org/10.1364/BOE.8.001607">Review of Intraoperative Optical Coherence Tomography: Technology and Applications</a>.&rdquo; <i>Biomedical Optics Express</i> 8 (3): 1607–37.</span></li>
-<li><span id="DeshpandeRAS2016RSS">Deshpande, Nikhil, Edward Grant, Thomas C. Henderson, and Mark T. Draelos. 2016. &ldquo;<a href="https://doi.org/10.1016/j.robot.2015.10.009">Autonomous Navigation Using Received Signal Strength and Bearing-Only Pseudogradient Interpolation </a>.&rdquo; <i>Robotics and Autonomous Systems </i>75, Part B (January): 129–44.</span></li>
-<li><span id="McNabb2023RAOCT">McNabb, Ryan, Pablo Ortiz, Kyung-Min Roh, Ailin Song, Mark Draelos, Stefanie Schuman, Glenn Jaffe, Eleonora Lad, Joseph Izatt, and Anthony Kuo. n.d. “Contactless, autonomous robotic alignment of optical coherence tomography for in vivo evaluation of diseased retinas.” <i>Nature Communications</i>.</span></li></ol>
+                <h3>Journal</h3>
+                <ol class="bibliography"><li><span id="draelos2021bubblewrap">Draelos, Anne, Pranjal Gupta, Na Young Jun, Chaichontat Sriworarat, and John Pearson. 2021. “Bubblewrap: Online tiling and real-time flow prediction on neural manifolds.” <i>Advances in Neural Information Processing Systems</i> 34.</span></li>
+<li><span id="draelos2021improv">Draelos, Anne, Maxim Nikitchenko, Chaichontat Sriworarat, Daniel Sprague, Matthew D Loring, Eftychios Pnevmatikakis, Andrea Giovannucci, Eva A Naumann, and John M Pearson. 2021. “improv: A flexible software platform for adaptive neuroscience experiments.” <i>BioRxiv</i>.</span></li>
+<li><span id="zhao2020interference">Zhao, Lingfei, Ethan G Arnault, Alexey Bondarev, Andrew Seredinski, Trevyn FQ Larson, Anne W Draelos, Hengming Li, et al. 2020. “Interference of chiral Andreev edge states.” <i>Nature Physics</i> 16 (8): 862–67.</span></li>
+<li><span id="draelos2020onlinf">Draelos, Anne, Eva A Naumann, and John M Pearson. 2020. “Online neural connectivity estimation with ensemble stimulation.” <i>ArXiv Preprint ArXiv:2007.13911</i>.</span></li>
+<li><span id="draelos2020online">Draelos, Anne, and John Pearson. 2020. “Online Neural Connectivity Estimation with Noisy Group Testing.” <i>Advances in Neural Information Processing Systems</i> 33.</span></li>
+<li><span id="draelos2019supercurrent">Draelos, Anne Watson, Ming-Tso Wei, Andrew Seredinski, Hengming Li, Yash Mehta, Kenji Watanabe, Takashi Taniguchi, Ivan Borzenets, Francois Amet, and Gleb Finkelstein. 2019. “Supercurrent Flow in Multi-Terminal Graphene Josephson Junctions.” <i>Nano Letters</i>.</span></li>
+<li><span id="draelos2019subkelvin">Draelos, AW, A Silverman, B Eniwaye, EG Arnault, CT Ke, MT Wei, I Vlassiouk, IV Borzenets, F Amet, and G Finkelstein. 2019. “Subkelvin lateral thermal transport in diffusive graphene.” <i>Physical Review B</i> 99 (12): 125427.</span></li>
+<li><span id="wei2019chiral">Wei, MT, AW Draelos, A Seredinski, CT Ke, H Li, Y Mehta, K Watanabe, et al. 2019. “Chiral quasiparticle tunneling between quantum Hall edges in proximity with a superconductor.” <i>Physical Review B</i> 100 (12): 121403.</span></li>
+<li><span id="seredinski2019quantum">Seredinski, Andrew, Anne W Draelos, Ethan G Arnault, Ming-Tso Wei, Hengming Li, Tate Fleming, Kenji Watanabe, Takashi Taniguchi, François Amet, and Gleb Finkelstein. 2019. “Quantum Hall–based superconducting interference device.” <i>Science Advances</i> 5 (9): eaaw8693.</span></li>
+<li><span id="ke2019anomalous">Ke, CT, AW Draelos, A Seredinski, MT Wei, H Li, M Hernandez-Rivera, K Watanabe, et al. 2019. “Anomalous periodicity of magnetic interference patterns in encapsulated graphene Josephson junctions.” <i>Physical Review Research</i> 1 (3): 033084.</span></li>
+<li><span id="seredinski2018supercurrent">Seredinski, Andrew, Anne Draelos, Ming-Tso Wei, Chung-Ting Ke, Tate Fleming, Yash Mehta, Ethan Mancil, et al. 2018. “Supercurrent in Graphene Josephson Junctions with Narrow Trenches in the Quantum Hall Regime.” <i>MRS Advances</i> 3 (47-48): 2855–64.</span></li>
+<li><span id="draelos2018supercurrent">Draelos, Anne, Ming-Tso Wei, Andrew Seredinski, Chung-Ting Ke, Hengming Li, Yash Mehta, Ethan Mancil, et al. 2018. “Supercurrent in Multi-Terminal Ballistic Graphene Josephson Junctions.” <i>Bulletin of the American Physical Society</i>.</span></li>
+<li><span id="draelos2018investigation">Draelos, Anne W, Ming Tso Wei, Andrew Seredinski, Chung Ting Ke, Yash Mehta, Russell Chamberlain, Kenji Watanabe, et al. 2018. “Investigation of supercurrent in the quantum Hall regime in graphene Josephson junctions.” <i>Journal of Low Temperature Physics</i> 191 (5): 288–300.</span></li>
+<li><span id="draelos2017robust">Draelos, Anne, Chung-Ting Ke, Ivan Borzenets, Ming-Tso Wei, Andrew Seredenski, Kenji Watanabe, Takashi Taniguchi, et al. 2017. “Robust 4π periodicity in ballistic graphene Josephson junctions.” <i>Bulletin of the American Physical Society</i> 62.</span></li>
+<li><span id="borzenets2017governing">Borzenets, Ivan, Francois Amet, Chung Ting Ke, Anne Draelos, Kenji Watanabe, Takashi Taniguchi, Yuriy Bomze, Gleb Finkelstain, Michihisa Yamamoto, and Seigo Tarucha. 2017. “Governing energies of graphene Josephson junctions from dirty to ultra-clean regimes.” <i>SUPERSTRIPES</i>, 191.</span></li>
+<li><span id="borzenets2016ballistic">Borzenets, IV, F Amet, CT Ke, AW Draelos, MT Wei, A Seredinski, K Watanabe, et al. 2016. “Ballistic Graphene Josephson Junctions from the Short to the Long Junction Regimes.” <i>Physical Review Letters</i> 117 (23): 237002.</span></li>
+<li><span id="chung2016critical">“Critical Current Scaling in Long Diffusive Graphene-Based Josephson Junctions.” 2016. <i>Nano Letters</i> 16 (8): 4788–91.</span></li>
+<li><span id="watson2015rhodium">Watson, Anne M, Xiao Zhang, Rodrigo Alcaraz de la Osa, Juan Marcos Sanz, Francisco González, Fernando Moreno, Gleb Finkelstein, Jie Liu, and Henry O Everitt. 2015. “Rhodium Nanoparticles for Ultraviolet Plasmonics.” <i>Nano Letters</i> 15 (2): 1095–1100.</span></li>
+<li><span id="watson2014sers">Watson, Anne, Mauricio Pilo-Pais, Steven Demers, Thom LaBean, and Gleb Finkelstein. 2014. “SERS Plasmonic Enhancement using DNA Origami-based Complex Metallic Nanostructures.” <i>Bulletin of the American Physical Society</i>.</span></li>
+<li><span id="gann2014topographic">Gann, Eliot, Anne Watson, John R Tumbleston, Justin Cochran, Hongping Yan, Cheng Wang, Jaewook Seok, Michael Chabinyc, and Harald Ade. 2014. “Topographic measurement of buried thin-film interfaces using a grazing resonant soft x-ray scattering technique.” <i>Physical Review B</i> 90 (24): 245421.</span></li>
+<li><span id="pilo2014surface">Pilo-Pais, Mauricio, A Watson, Steven Demers, Thomas H LaBean, and Gleb Finkelstein. 2014. “Surface-Enhanced Raman Scattering Plasmonic Enhancement Using DNA Origami-Based Complex Metallic Nanostructures.” <i>Nano Letters</i> 14 (4): 2099–2104.</span></li>
+<li><span id="shinn2010modeling">Shinn, Michelle, Stephen Benson, George Neil, Anne Watson, Peter van der Slot, and Ramin Lalezari. 2010. “Modeling and Operation of an Edge-Outcoupled Free-Electron Laser.” <i>Talk TUOC3 FEL2010</i>.</span></li></ol>
 
                 <h3>Conference</h3>
-                <ol class="bibliography"><li><span id="McNabbSPIE2023RAOCT">McNabb, Ryan P., Yuan Tian, Al-Hafeez Dhalla, Pablo Ortiz, Mark Draelos, Joseph A. Izatt, and Anthony N. Kuo. 2023. “Interchangeable imaging platform for ophthalmic robotically aligned optical coherence tomography.” In <i>SPIE Photonics West</i>.</span></li>
-<li><span id="TianARVO2022Adaptive">Tian, Yuan, Mark Draelos, Ryan P. McNabb, Al-Hafeez Dhalla, Anthony N. Kuo, and Joseph A. Izatt. 2023. “Efficient Anterior Chamber Cell Phantom Tracking Using Adaptive Scanning OCT.” In <i>ARVO Annual Meeting</i>.</span></li>
-<li><span id="LaoprasertARVO2022RAOCT">Laoprasert, Rick, Mark Draelos, Joseph A. Izatt, Ryan P. McNabb, and Anthony N. Kuo. 2023. “Real-time dual sample imaging using Vortex open-source OCT software library.” In <i>ARVO Annual Meeting</i>.</span></li>
-<li><span id="McNabbARVO2022RAOCT">McNabb, Ryan P., Yuan Tian, Al-Hafeez Dhalla, Pablo Ortiz, Mark Draelos, Joseph A. Izatt, and Anthony N. Kuo. 2023. “Ophthalmic robotically aligned optical coherence tomography with interchangeable imaging module.” In <i>ARVO Annual Meeting</i>.</span></li>
-<li><span id="DraelosSPIE2023RAOCT">Draelos, Mark, Pablo Ortiz, Amit Narawane, Ryan P. McNabb, Anthony N. Kuo, and Joseph A. Izatt. 2023. “Repeatable Retinal Imaging Independent of Posture and Head Pose with Robotically-Aligned Optical Coherence Tomography.” In <i>SPIE Photonics West</i>.</span></li>
-<li><span id="OrtizSPIE2023DMC">Ortiz, Pablo, Amit Narawane, Ryan P. McNabb, Anthony N. Kuo, Joseph A. Izatt, and Mark Draelos. 2023. “Sensor-Driven Digital Motion Correction of Robotically Aligned Optical Coherence Tomography Retinal Volumes.” In <i>SPIE Photonics West</i>.</span></li>
-<li><span id="TianSPIE2023Adaptive">Tian, Yuan, Mark Draelos, Ryan P. McNabb, Al-Hafeez Dhalla, Anthony N. Kuo, and and Joseph A. Izatt. 2023. “Efficient 3D cell tracking using adaptive scanning OCT.” In <i>SPIE Photonics West</i>.</span></li>
-<li><span id="NarawaneSPIE2023RAOCT">Narawane, Amit, Mark Draelos, Pablo Ortiz, Ryan P. McNabb, Anthony N. Kuo, and Joseph A. Izatt. 2023. “Robotically-Aligned Optical Coherence Tomography Angiography with Multiple Illumination Angles for Enhanced Vessel Visualization.” In <i>SPIE Photonics West</i>.</span></li>
-<li><span id="McNabbARVO2022TeleRAOCT">McNabb, Ryan P., Ailin Song, Kyung-Min Roh, Pablo Ortiz, Mark Draelos, Stefanie Schuman, Glenn J. Jaffe, Joseph A. Izatt, and Anthony N Kuo. 2022. “Autonomous Robotically Aligned OCT Enables Remote, Telehealth Retinal Imaging and Angiography.” In <i>Investigative Ophthalmology &amp; Visual Science</i>, 63:4453.</span></li>
-<li><span id="NarawaneARVO2022Automated">Narawane, Amit, Pablo Ortiz, Mark Draelos, Ryan P. McNabb, Anthony N. Kuo, and Joseph A. Izatt. 2022. “Automated visualization of Henle’s fiber layer and outer nuclear layer in retinal volumes using robotically-aligned optical coherence tomography.” In <i>Investigative Ophthalmology &amp; Visual Science</i>, 63:3514.</span></li>
-<li><span id="OritzARVO2022RAOCT">Ortiz, Pablo, Mark Draelos, Amit Narawane, Ryan P. McNabb, Anthony N. Kuo, and Joseph A Izatt. 2022. “Robotically Aligned OCT Enables Synthetically Increased Field-of-View on Automatically Acquired Retinal Images.” In <i>Investigative Ophthalmology &amp; Visual Science</i>, 63:4098.</span></li>
-<li><span id="DraelosARVO2022RAOCT">Draelos, Mark, Pablo Ortiz, Amit Narawane, Ryan P McNabb, Anthony N Kuo, and Joseph A Izatt. 2022. “Head orientation-independent optical coherence tomography with a robotically-aligned scanner.” In <i>Investigative Ophthalmology &amp; Visual Science</i>, 63:4454.</span></li>
-<li><span id="OrtizICRA2022RAOCT">Ortiz, Pablo, Mark Draelos, Amit Narawane, Ryan P. McNabb, Anthony N. Kuo, and Joseph A. Izatt. 2022. &ldquo;<a href="https://doi.org/10.1109/ICRA46639.2022.9812428">Robotically-Aligned Optical Coherence Tomography
-                 with Gaze Tracking for Image Montaging of the Retina</a>.&rdquo; In <i>IEEE International Conference on Robotics and Automation (ICRA)</i>, 3783–89.</span></li>
-<li><span id="DraelosIHPBA2022SVBC">Draelos, Mark, Jeremy Sharib, Peter J Allen, Dan G Blazer III, Michael E Lidsky, Kevin N Shah, Christopher Mantyh, and Sabino Zani, Jr. 2022. “Open and Robotic Pancreaticoduodenectomies Exhibit Comparable True Hospital Costs in Year-Adjusted Matched Cohort.” In <i>IHPBA World Congress</i>.</span></li>
-<li><span id="NarawaneSPIE2022RAOCT">Narawane, Amit, Pablo Ortiz, Mark Draelos, Ryan P. McNabb, Anthony N. Kuo, and Joseph A. Izatt. 2022. “Automated volumetric retinal imaging with complete visualization of Henleś fiber layer using robotically aligned optical coherence tomography.” In <i>SPIE Photonics West</i>.</span></li>
-<li><span id="OrtizSPIE2022RAOCT">Ortiz, Pablo, Mark Draelos, Amit Narawane, Ryan P McNabb, Anthony N Kuo, and Joseph A Izatt. 2022. “Robotically Aligned Optical Coherence Tomography with Gaze Tracking and Retinal Image Montaging.” In <i>SPIE Photonics West – Digital Forum</i>.</span></li>
-<li><span id="DraelosSPIE2022Delta">Draelos, Mark, Christian Viehland, and Joseph A Izatt. 2022. “Adaptive Scanning for &gt;5x Speedup in Volumetric Framerate with Point-Scan Optical Coherence Tomography.” In <i>SPIE Photonics West – Digital Forum</i>.</span></li>
-<li><span id="McNabbSPIE2022RAOCT">McNabb, Ryan P., Ailin Song, Kyung Min Roh, Jay Lusk, Pablo Ortiz, Mark Draelos, Stefanie Schuman, Glenn Jaffe, Joseph A. Izatt, and Anthony N. Kuo. 2022. “Autonomous Robotic Alignment Enables Remote, Telehealth OCT and OCTA Retinal Imaging.” In <i>SPIE Photonics West</i>.</span></li>
-<li><span id="Zhang2022FMCW">Zhang, Jingkai, Joseph Izatt, Al-Hafeez Dhalla, Kevin Zhou, Ruobing Qian, Christian Viehland, and Mark Draelos. 2022. “Real-time wide-FOV spectral-scanning FMCW 3D imaging and velocimetry.” In <i>Frontiers in Optics + Laser Science</i>.</span></li>
-<li><span id="DraelosISMR2021RAOCT">Draelos, Mark, Pablo Ortiz, Christian Viehland, Ryan P. McNabb, Anthony N. Kuo, and Joseph A. Izatt. 2021. “Autonomous Optical Coherence Tomography Imaging of Eyes of Freestanding Human Subjects.” In <i>IEEE International Symposium on Medical Robotics</i>.</span></li>
-<li><span id="SongARVO2021RAOCT">Song, Ailin, Pablo Ortiz, Mark Draelos, Stefanie G. Schuman, Glenn J. Jaffe, Sina Farsiu, Joseph A. Izatt, Ryan P. McNabb, and Anthony N. Kuo. 2021. “Combining artificial intelligence and robotics: A semi-automated optical coherence tomography-based approach for posterior eye disease screening.” In <i>Investigative Ophthalmology &amp; Visual Science</i>, 62:120.</span></li>
-<li><span id="OrtizARVO2021RAOCT">Ortiz, Pablo, Mark Draelos, Ryan McNabb, Anthony Kuo, and Joseph Izatt. 2021. “Autofocusing and Autoaligning Robotic Optical Coherence Tomography.” In <i>Investigative Ophthalmology &amp; Visual Science</i>, 62:2555.</span></li>
-<li><span id="McNabbARVO2021RAOCT">McNabb, Ryan P., Pablo Ortiz, Kyung-Min Roh, Mark Draelos, Stefanie G. Schuman, Glenn J. Jaffe, Eleonora M. Lad, Joseph A. Izatt, and Anthony N. Kuo. 2021. “Robotically aligned OCT enables physically distanced imaging and relevant measurements in a retina clinic population.” In <i>Investigative Ophthalmology &amp; Visual Science</i>, 62:2457.</span></li>
-<li><span id="SongACTS2021RAOCT">Song, Ailin, Pablo Ortiz, Mark Draelos, Stefanie G. Schuman, Glenn J. Jaffe, Sina Farsiu, Joseph A. Izatt, Ryan P. McNabb, and Anthony N. Kuo. 2021. “Combining artificial intelligence and robotics: A novel fully automated optical coherence tomography-based approach for eye disease screening.” In <i>Journal of Clinical and Translational Science</i>, 5:122.</span></li>
-<li><span id="OrtizSPIE2021RAOCT">Ortiz, Pablo, Mark Draelos, Ryan P McNabb, Amit M Narawane, Christian Viehland, Anthony N Kuo, and Joseph A Izatt. 2021. “Autoaligning and autofocusing robotic optical coherence tomography of the retina for subject motion, gaze, and defocus compensation.” In <i>SPIE Photonics West</i>, 11630:116300H.</span></li>
-<li><span id="McNabbSPIE2021RAOCT">McNabb, Ryan, Pablo Ortiz, Mark Draelos, Joseph Izatt, and Anthony Kuo. 2021. “Robotically assisted optical coherence tomography for socially distanced clinical ophthalmic imaging.” In <i>SPIE Photonics West</i>, 11623:116231E.</span></li>
-<li><span id="Choi2021RAOCT">Choi, Eun Young, Ailin Song, Kyung-Min Roh, Pablo Ortiz, Mark Draelos, Shivram Chandramouli, Joseph A. Izatt, Alexander T. Limkakeng, Ryan P. McNabb, and Anthony N. Kuo. 2021. “Remote Fundus Imaging of Patients in the Emergency Department Using Robotically Aligned OCT.” In <i>Women in Ophthalmology</i>.</span></li>
-<li><span id="McNabbARVO2020RAOCT">McNabb, Ryan P., Pablo Ortiz, Mark Draelos, and Joseph A. Izatt. 2020. “Robotically Aligned OCT Imaging with Clinically Relevant Fields of View on the Retina.” In <i>Investigative Ophthalmology &amp; Visual Science</i>, 61:3252.</span></li>
-<li><span id="OrtizARVO2020RAOCT">Ortiz, Pablo, Mark Draelos, Ryan P. McNabb, Ruobing Qian, Christian Viehland, Anthony N. Kuo, and Joseph A. Izatt. 2020. “Robotically Aligned OCT for Subject Eye Translation and Rotation Compensation.” In <i>Investigative Ophthalmology &amp; Visual Science</i>, 61:2575.</span></li>
-<li><span id="TianICRA2020Suture">Tian, Yuan, Mark Draelos, Gao Tang, Ruobing Qian, Anthony Kuo, Joseph Izatt, and Kris Hauser. 2020. &ldquo;<a href="https://doi.org/10.1109/ICRA40945.2020.9196834">Toward Autonomous Robotic Micro-Suturing Using Optical Coherence Tomography Calibration and Path Planning</a>.&rdquo; In <i>IEEE International Conference on Robotics and Automation (ICRA)</i>, 5516–22.</span></li>
-<li><span id="OrtizSPIE2020RAOCT">Ortiz, Pablo, Mark Draelos, Ryan McNabb, Anthony Kuo, and Joseph Izatt. 2020. “Robotically-Aligned Optical Coherence Tomography with 5-Degree of Freedom Eye Tracking for Subject Motion and Gaze Compensation.” In <i>SPIE Photonics West</i>.</span></li>
-<li><span id="DraelosARVO2019RAOCT">Draelos, Mark, Pablo Ortiz, Ruobing Qian, Christian Viehland, Kris Hauser, Anthony Kuo, and Joseph Izatt. 2019. “Robotically Aligned OCT Scanner for Automated Patient Tracking Retinal Imaging.” In <i>Investigative Ophthalmology &amp; Visual Science</i>, 60:1268.</span></li>
-<li><span id="DraelosICRA2019DALK">Draelos, Mark, Gao Tang, Brenton Keller, Kris Hauser, Anthony Kuo, and Joseph Izatt. 2019. “Automating Needle Insertions for Deep Anterior Lamellar Keratoplasty.” In <i>Open Challenges and State-of-the-Art in Control System Design and Technology Development for Surgical Robotic Systems Workshop at IEEE International Conference on Robotics and Automation (ICRA)</i>.</span></li>
-<li><span id="DraelosICRA2019RAOCT">Draelos, Mark, Pablo Ortiz, Ruobing Qian, Brenton Keller, Kris Hauser, Anthony Kuo, and Joseph Izatt. 2019. &ldquo;<a href="https://doi.org/10.1109/ICRA.2019.8793524">Automatic Optical Coherence Tomography Imaging of Stationary and Moving Eyes with a Robotically-Aligned Scanner</a>.&rdquo; In <i>IEEE International Conference on Robotics and Automation (ICRA)</i>, 8897–8903.</span></li>
-<li><span id="DraelosSPIE2019RAOCT">Draelos, Mark, Pablo Ortiz, Ruobing Qian, Christian Viehland, Brenton Keller, Theodore DuBose, Anthony Kuo, and Joseph Izatt. 2019. “Robotically-aligned optical coherence tomography for automatic imaging of stationary and moving eyes.” In <i>SPIE Photonics West</i>.</span></li>
-<li><span id="LiSPIE2019Spiral">Li, Jianwei D., Oscar M. Carrasco-Zevallos, Moseph Jackson-Atogi, Mark Draelos, Christian Viehland, Brenton Keller, Ryan P. McNabb, Anthony N. Kuo, and Joseph A. Izatt. 2019. “Constant linear velocity spiral scanning for real time 4D OCT with visualization in virtual reality.” In <i>SPIE Photonics West</i>.</span></li>
-<li><span id="DraelosARVO2018DALK">Draelos, Mark, Brenton Keller, Gao Tang, Kris Hauser, Anthony N Kuo, and Joseph A. Izatt. 2018. “OCT-Guided Cooperative Robotic Deep Anterior Lamellar Keratoplasty.” In <i>Investigative Ophthalmology &amp; Visual Science</i>, 59:1318.</span></li>
-<li><span id="KellerARVO2018Tracking">Keller, Brenton, Mark Draelos, Gao Tang, Sina Farsiu, Anthony N Kuo, Kris Hauser, and Joseph A. Izatt. 2018. “Real-time Corneal Segmentation and 3D Needle Tracking in Intrasurgical OCT.” In <i>Investigative Ophthalmology &amp; Visual Science</i>, 59:1342.</span></li>
-<li><span id="DraelosICRA2018DALK">Draelos, Mark, Brenton Keller, Gao Tang, Anthony Kuo, Kris Hauser, and Joseph Izatt. 2018. &ldquo;<a href="https://doi.org/10.1109/ICRA.2018.8463153">Real-Time Image-Guided Cooperative Robotic Assist Device for Deep Anterior Lamellar Keratoplasty</a>.&rdquo; In <i>IEEE International Conference on Robotics and Automation (ICRA)</i>, 1–9.</span></li>
-<li><span id="DraelosIROS2017AVRS">Draelos, M., B. Keller, C. Toth, A. Kuo, K. Hauser, and J. Izatt. 2017. &ldquo;<a href="https://doi.org/10.1109/IROS.2017.8206076">Teleoperating Robots from Arbitrary Viewpoints in Surgical Contexts</a>.&rdquo; In <i>IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS)</i>, 2549–55.</span></li>
-<li><span id="DraelosARVO2017VR">Draelos, Mark, Brenton Keller, Anthony N Kuo, and Joseph A Izatt. 2017. “Immersive Virtual Reality for Live Volumetric Optical Coherence Tomography.” In <i>Investigative Ophthalmology &amp; Visual Science</i>, 58:3116.</span></li>
-<li><span id="HauserICRA2017Amazon">Aubert, M. C., A. W. Draelos, M. Draelos, Y. Feng, H. He, B. Keller, J. Li, et al. 2017. “A Rapid Development Methodology for an Autonomous Warehouse Picking Robot.” In <i>Warehouse Picking Automation Workshop at IEEE International Conference on Robotics and Automation (ICRA)</i>.</span></li>
-<li><span id="DraelosSPIE2017VR">Draelos, Mark, Brenton Keller, Oscar Carrasco-Zevallos, Anthony Kuo, and Joseph Izatt. 2017. “Seeing is believing: Real-time visualization and interaction with optical coherence tomography volumes in immersive virtual reality.” In <i>SPIE Photonics West</i>.</span></li>
-<li><span id="QuiMOBIHEALTH2015Gaze">Qiu, Qiang, Zhuoqing Chang, Mark Draelos, Jie Chen, Alex Bronstein, and Guillermo Sapiro. 2015. &ldquo;<a href="https://doi.org/10.4108/eai.14-10-2015.2261657">Low-Cost Gaze and Pulse Analysis Using RealSense</a>.&rdquo; In <i>EAI International Conference on Wireless Mobile Communication and Healthcare (MOBIHEALTH)</i>, 276–79.</span></li>
-<li><span id="DraelosICIP2015Gaze">Draelos, M., Q. Qiu, A. Bronstein, and G. Sapiro. 2015. &ldquo;<a href="https://doi.org/10.1109/ICIP.2015.7351256">Intel RealSense = Real Low Cost Gaze</a>.&rdquo; In <i>IEEE International Conference on Image Processing (ICIP)</i>, 2520–24.</span></li>
-<li><span id="DeshpandeIROS2014RSS">Deshpande, N., E. Grant, M. Draelos, and T.C. Henderson. 2014. &ldquo;<a href="https://doi.org/10.1109/IROS.2014.6943217">Received Signal Strength Based Bearing-Only Robot Navigation in a Sensor Network Field</a>.&rdquo; In <i>IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS)</i>, 4618–23.</span></li>
-<li><span id="GialloCAINE2012Phonomicrosurgery">Giallo II, J.F., L.S. Mattos, S. Miller, Z. Neinstedt, M. Draelos, G. Lee, and E. Grant. 2012. “Design and Validation of a Medical Robotic System for Laser Phonomicrosurgery.” In <i>International Conference on Computer Applications in Industry and Engineering (CAINE)</i>, 225–30.</span></li>
-<li><span id="DraelosMFI2012Kinect">Draelos, M., N. Deshpande, and E. Grant. 2012. &ldquo;<a href="https://doi.org/10.1109/MFI.2012.6343067">The Kinect up Close: Adaptations for Short-Range Imaging</a>.&rdquo; In <i>IEEE Conference on Multisensor Fusion and Integration for Intelligent Systems (MFI)</i>, 251–56.</span></li>
-<li><span id="HendersonMFI2012Symmetry">Henderson, T.C., E. Cohen, A. Joshi, E. Grant, M. Draelos, and N. Deshpande. 2012. &ldquo;<a href="https://doi.org/10.1109/MFI.2012.6343065">Symmetry as a Basis for Perceptual Fusion</a>.&rdquo; In <i>IEEE Conference on Multisensor Fusion and Integration for Intelligent Systems (MFI)</i>, 101–7.</span></li>
-<li><span id="DraelosISMR2023RAOCT">Draelos, Mark, Pablo Ortiz, Amit Narawane, Ryan P. McNabb, Anthony N. Kuo, and Joseph A. Izatt. n.d. “Robotic Optical Coherence Tomography of Human Subjects with Posture-Invariant Head and Eye Alignment in Six Degrees of Freedom.” In <i>International Symposium on Medical Robotics (ISMR)</i>.</span></li></ol>
+                <ol class="bibliography"><li><span id="zhang2016plasmonics">Zhang, X., Y. Gutiérrez, P. Li, A. I. Barreda, A. M. Watson, R. Alcaraz de la Osa, G. Finkelstein, et al. 2016. “Plasmonics in the UV range with Rhodium nanocubes.” In <i>Proc. SPIE, Nanophotonics VI</i>. Vol. 9884.</span></li>
+<li><span id="draelos2016sub">Draelos, Anne, Avery Silverman, Jiyingmei Wang, Chung-Ting Ke, Ming-Tso Wei, Ivan Vlassiouk, Francois Amet, and Gleb Finkelstein. 2016. “Sub-Kelvin lateral thermal transport in graphene with superconducting contacts.” In <i>APS Meeting Abstracts</i>.</span></li>
+<li><span id="gann2013grazing">Gann, Eliot, Anne Watson, Cheng Wang, Justin Cochran, Joshua Carpenter, Terry McAfee, Hongping Yan, Christopher McNeill, Michael Chabinyc, and Harald Ade. 2013. “Grazing Resonant Soft X-ray Scattering: A New Way to See Inside Mesoscale Thin Films.” In <i>APS Meeting Abstracts</i>, 1:34011.</span></li>
+<li><span id="mai2012ultrafast">Mai, Cong, Sinan Can, Anne Watson, Harald Ade, and Kenan Gundogdu. 2012. “Ultrafast multidimensional spectroscopy of P3HT thin films.” In <i>APS Meeting Abstracts</i>, 1:49007.</span></li>
+<li><span id="shinn2012new">Shinn, Michelle D, Stephen V Benson, Anne M Watson, Peter JM van der Slot, Henry P Freund, and Dinh C Nguyen. 2012. “A new approach to improving the efficiency of fel oscillator simulations.” In <i>34th International Free-Electron Laser Conference, FEL 2012</i>, 225–28.</span></li></ol>
 
-                <h3>Patents</h3>
-                <ol class="bibliography"><li><span id="Draelos2016SystemsPatent">Draelos, Mark, Kris Hauser, Anthony Kuo, Brenton Keller, and Joseph Izatt. 2021. Systems and methods for arbitrary viewpoint robotic manipulation and robotic surgical assistance. Patent, issued 2021.</span></li>
-<li><span id="Draelos2019RoboticallyPatent">Draelos, Mark, Joseph Izatt, Anthony Kuo, Pablo Ortiz, and Ryan McNabb. n.d. Robotically-Aligned Optical Coherence Tomography for Automatic Imaging of Stationary and Moving Eyes. Patent Application.</span></li>
-<li><span id="Draelos2021AdaptivePatent">Draelos, Mark. n.d. Adaptive Scanning for Framerate or Resolution Improvement with Point- and Line-Scan Imaging Modalities. Provisional Patent.</span></li></ol> -->
+                <!-- <h3>Patents</h3>
+                <ol class="bibliography"></ol> -->
 
             </div>
         </div>

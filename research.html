@@ -12,7 +12,10 @@ permalink: /research/
             </div>
         </div>
         {% for project in projects %}
-            {% include project.html %}
+            {% assign project_id = project.basename | split: "." | first %}
+            <div id="project-{{ project_id | slugify }}" class="project-section">
+                {% include project.html %}
+            </div>
         {% endfor %}
     </div>
 </section>
@@ -27,7 +30,10 @@ permalink: /research/
             </div>
         </div>
         {% for project in projects %}
-            {% include project.html %}
+            {% assign project_id = project.basename | split: "." | first %}
+            <div id="project-{{ project_id | slugify }}" class="project-section">
+                {% include project.html %}
+            </div>
         {% endfor %}
     </div>
 </section>

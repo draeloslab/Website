@@ -1,8 +1,10 @@
-- name: Home
-  link: /
-- name: Research
-  link: /research/
+# - name: Home
+#   link: /
+# - name: Research
+#   link: /research/
 - name: People
   link: /people/
 - name: Publications
   link: /publications/
+- name: Wiki
+  link: https://github.com/draeloslab/wiki/wiki
