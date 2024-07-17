@@ -1,0 +1,22 @@
+---
+layout: default
+title: News
+permalink: /news/
+---
+<section>
+    <div class="container px-4">
+        <div class="row gx-4">
+            <div class="col-lg-12">
+                <h1>Lab News & Updates</h1>
+                {% for news in site.news %}
+                <article>
+                    <h2>{{ news.title }}</h2>
+                    <p>Date: {{ news.date }}</p>
+                    <p>{{ news.content }}</p>
+                </article>
+                {% endfor %}
+
+            </div>
+        </div>
+    </div>
+</section>

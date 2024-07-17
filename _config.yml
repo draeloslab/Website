@@ -4,6 +4,7 @@ lab_short_name: Draelos Lab
 collections:
   projects:
   persons:
+  news:
 
 scholar:
   style: _bibliography/chicago.cls
