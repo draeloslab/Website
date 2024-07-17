@@ -2,5 +2,5 @@
                 <p><i>{{ news.date | date: "%B %Y"}}</i>: {{ news.content | markdownify }}</p>
                 {% if news.image %}
                 <img src="{{ news.image }}" alt="News Image">
-                {% endif }
+                {% endif %}
             </div>
