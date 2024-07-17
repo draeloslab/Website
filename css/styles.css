@@ -31,6 +31,12 @@ header {
     object-fit: contain;
 }
 
+.img-news {
+    width: 300px;
+    max-height: auto;
+    object-fit: contain;
+}
+
 .img-banner {
     width: 600px;
     object-fit: contain;
