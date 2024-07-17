@@ -1,6 +1,9 @@
             <div class="news">
                 <span><i>{{ news.date | date: "%B %Y"}}</i>: {{ news.content | markdownify }}</span>
                 {% if news.image %}
-                <img src="{{ news.image }}" alt="News Image">
+                <div class="col-lg-6 align-self-center">
+                    <img class="img img-fluid mb-4 mb-lg-0" src="{{ news.image }}" alt="News Image" />
+                </div>
+                <!-- <img src="{{ news.image }}" alt="News Image"> -->
                 {% endif %}
             </div>
