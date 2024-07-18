@@ -10,9 +10,9 @@ permalink: /news/
                 <h1>News</h1>
                 <h2><u>Lab Updates</u></h2>
                 {% for news in site.news %}
-                    <li>
+                    <div>
                         {% include news.html content=news.content date=news.date title=news.title image=news.image %}
-                    </li>
+                    </div>
                 {% endfor %}
 
             </div>
