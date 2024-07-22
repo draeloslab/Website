@@ -43,7 +43,7 @@ header {
 }
 
 .tile {
-    max-height: 200px;
+    max-height: 100px;
     max-width: 100%;
 }
 
