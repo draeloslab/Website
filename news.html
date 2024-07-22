@@ -9,13 +9,12 @@ permalink: /news/
             <div class="col-lg-12">
                 <h1>News</h1>
                 <h2><u>Lab Updates</u></h2>
-                {% assign sorted_news = site.news | sort: 'date' | reverse%}
+                {% assign sorted_news = site.news | sort: 'date' | reverse %}
                 {% for news in sorted_news %}
                     <div>
                         {% include news.html content=news.content date=news.date title=news.title image=news.image %}
                     </div>
                 {% endfor %}
-
             </div>
         </div>
     </div>

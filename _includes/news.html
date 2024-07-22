@@ -4,11 +4,11 @@
                     <img class="img img-fluid rounded mb-2 mb-lg-0 custom-img" src="{{ news.image }}" alt="News Image" />
                 </div>
                 <div class="col-lg-8 align-self-center">
-                {% else %} 
-                <div class="col-lg-8 align-self-center">
-                {% endif %} 
-                    <h3>{{ news.title }}</h1>
-                    <h5><i>{{ news.date | date: "%B %d, %Y" }}</i></h5>
+                {% else %}
+                <div class="col-12 align-self-center">
+                {% endif %}
+                    <h3>{{ news.title }}</h3>
+                    <h5><i>{{ news.date | date: "%m %d, %Y" }}</i></h5>
                     <p>{{ news.content | strip_newlines | strip_html }}</p>
                 </div>
             </div>
