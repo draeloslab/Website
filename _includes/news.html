@@ -10,6 +10,7 @@
                     {% endif %}
                         <h3>{{ news.title }}</h3>
                         <h5><i>{{ news.date | date: "%B %d, %Y" }}</i></h5>
+                        <br>
                         <p>{{ news.content | strip_newlines | strip_html }}</p>
                     </div>
                 </div>
