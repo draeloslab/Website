@@ -1,7 +1,7 @@
-            <div class="container">
+            <!-- <div class="container"> -->
                 <div class="row my-3">
                     {% if news.image %}
-                    <div class="col-lg-3 align-self-center">
+                    <div class="col-lg-4 align-self-center">
                         <img class="img img-fluid rounded mb-2 mb-lg-0" src="{{ news.image }}" alt="News Image" />
                     </div>
                     <div class="col-lg-8 align-self-center">
@@ -13,4 +13,4 @@
                         <p>{{ news.content | strip_newlines | strip_html }}</p>
                     </div>
                 </div>
-            </div>
+            <!-- </div> -->
