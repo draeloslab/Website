@@ -1389,6 +1389,13 @@
      flex: 0 0 auto;
      width: 25%;
    }
+
+  .col-lg-3-5 {
+    -ms-flex: 0 0 auto;
+    flex: 0 0 auto;
+    width: 30%;
+    }
+
    .col-lg-4 {
      -ms-flex: 0 0 auto;
      flex: 0 0 auto;
