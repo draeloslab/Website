@@ -1,5 +1,4 @@
-            <!-- <div class="container"> -->
-                <div class="row my-3">
+                <!-- <div class="row my-3">
                     {% if news.image %}
                     <div class="col-lg-4 align-self-center">
                         <img class="img img-fluid rounded mb-2 mb-lg-0" src="{{ news.image }}" alt="News Image" />
@@ -13,5 +12,17 @@
                         <br>
                         <p>{{ news.content | strip_newlines | strip_html }}</p>
                     </div>
+                </div> -->
+
+                <div id="{{ news.title | slugify}}" class="col-lg-4 mt-5 align-self-center">
+                    <img class="img img-fluid rounded mb-2 mb-lg-0" src="{{ news.image }}" />
                 </div>
-            <!-- </div> -->
+                <div class="col-lg-8 mt-lg-5 align-self-center">
+                    <h3>{{ news.title}}</h3>
+                    <p class="lead">
+                        {{ news.date }}
+                    </p>
+                    <p>
+                        {{ news }}
+                    </p>
+                </div>
