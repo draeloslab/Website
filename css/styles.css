@@ -32,7 +32,7 @@ header {
 }
 
 .img-news {
-    width: 300px;
+    width: 400px;
     max-height: auto;
     object-fit: contain;
 }
