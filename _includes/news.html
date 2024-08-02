@@ -1,18 +1,3 @@
-                <!-- <div class="row my-3">
-                    {% if news.image %}
-                    <div class="col-lg-4 align-self-center">
-                        <img class="img img-fluid rounded mb-2 mb-lg-0" src="{{ news.image }}" alt="News Image" />
-                    </div>
-                    <div class="col-lg-8 align-self-center">
-                    {% else %}
-                    <div class="col-12 align-self-center">
-                    {% endif %}
-                        <h3>{{ news.title }}</h3>
-                        <h5><i>{{ news.date | date: "%B %d, %Y" }}</i></h5>
-                        <br>
-                        <p>{{ news.content | strip_newlines | strip_html }}</p>
-                    </div>
-                </div> -->
                 <div class="row my-3">
                     <div id="{{ news.title | slugify}}" class="col-lg-4 mt-5 align-self-center">
                         <img class="img img-fluid img-news rounded mb-2 mb-lg-0" src="{{ news.image }}" />
