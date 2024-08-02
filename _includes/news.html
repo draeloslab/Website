@@ -23,7 +23,7 @@
                             <i>{{ news.date | date: "%B %d, %Y" }}</i>
                         </p>
                         <p>
-                            {{ news.content | strip_newlines | strip_html }}
+                            {{ news.content | markdownify }}
                         </p>
                     </div>
                 </div>
