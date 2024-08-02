@@ -11,7 +11,7 @@ permalink: /news/
                 <h2><u>Lab Updates</u></h2>
                 {% assign sorted_news = site.news | sort: 'date' | reverse %}
                 {% for news in sorted_news %}
-                        {% include news %} 
+                        {% include news.html news=news %} 
                          <!-- content=news.content date=news.date title=news.title image=news.image %} -->
                 {% endfor %}
             </div>
