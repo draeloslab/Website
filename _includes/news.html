@@ -1,7 +1,4 @@
                 <div class="row my-3">
-                    <div id="{{ news.title | slugify}}" class="col-lg-3 mt-5 align-self-center">
-                        <img class="img img-fluid img-news rounded mb-2 mb-lg-0" src="{{ news.image }}" />
-                    </div>
                     <div class="col-lg-8 mt-lg-5 align-self-center">
                         <h3>{{ news.title}}</h3>
                         <p class="lead">
@@ -10,5 +7,8 @@
                         <p>
                             {{ news.content | markdownify }}
                         </p>
+                    </div>
+                    <div id="{{ news.title | slugify}}" class="col-lg-3 mt-5 align-self-center">
+                        <img class="img img-fluid img-news rounded mb-2 mb-lg-0" src="{{ news.image }}" />
                     </div>
                 </div>
