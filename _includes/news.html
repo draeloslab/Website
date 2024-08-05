@@ -8,7 +8,9 @@
                             <i>{{ news.date | date: "%B %d, %Y" }}</i>
                         </p>
                         <p>
-                            {{ news.content | markdownify }}
+                            <span style="font-size: 17px">
+                                {{ news.content | markdownify }}
+                            </span>
                         </p>
                     </div>
                 </div>
