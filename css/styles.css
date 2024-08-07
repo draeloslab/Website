@@ -37,6 +37,20 @@ header {
     object-fit: contain;
 }
 
+.align-items-center {
+    display: flex;
+    align-items: center;
+}
+
+.d-flex {
+    display: flex;
+}
+
+.justify-content-center {
+    justify-content: center;
+}
+
+
 .img-banner {
     width: 600px;
     object-fit: contain;
