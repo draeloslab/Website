@@ -3,7 +3,7 @@
                         <div class="col-lg-8">
                             <!-- Header with Date -->
                             <h1>{{ news.title }}</h1>
-                            <p class="lead"><i>{{ news.date | date: "%B %d, %Y" }}</i></p>
+                            <p class="lead">{{ news.date | date: "%B %d, %Y" }}</p>
                 
                             <!-- Layout for News Item -->
                             {% if news.image %}
