@@ -16,8 +16,8 @@
                     <div class="row justify-content-center">
                         <div class="col-lg-8">
                             <!-- Header with Date -->
-                            <h1>{{ news.title }}</h1>
-                            <p class="lead"><i>{{ news.date | date: "%B %d, %Y" }}</i></p>
+                            <h2>{{ news.title }}</h2>
+                            <p class="lead">{{ news.date | date: "%B %d, %Y" }}</p>
                 
                             <!-- Conditional Layout for Image and Content -->
                             {% if news.image %}
