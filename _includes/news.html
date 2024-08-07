@@ -22,7 +22,7 @@
                             <!-- Conditional Layout for Image and Content -->
                             {% if news.image %}
                             <div class="row my-3">
-                                {% if index % 2 == 0 %}
+                                {% if news.image_pos == "left" %}
                                 <!-- Image on Left -->
                                 <div class="col-lg-4">
                                     <img class="img img-fluid img-news rounded" src="{{ news.image }}" alt="News Image" />
@@ -34,7 +34,7 @@
                                         </span>
                                     </p>
                                 </div>
-                                {% else %}
+                                {% elsif news.image_pos == "right" %}
                                 <!-- Image on Right -->
                                 <div class="col-lg-8">
                                     <p>
@@ -45,6 +45,18 @@
                                 </div>
                                 <div class="col-lg-4">
                                     <img class="img img-fluid img-news rounded" src="{{ news.image }}" alt="News Image" />
+                                </div>
+                                {% elsif news.image_pos == "center" %}
+                                <!-- Image Centered -->
+                                <div class="col-lg-12 text-center">
+                                    <img class="img img-fluid img-news rounded mb-3" src="{{ news.image }}" alt="News Image" />
+                                </div>
+                                <div class="col-lg-12">
+                                    <p>
+                                        <span style="font-size: 20px;">
+                                            {{ news.content | markdownify }}
+                                        </span>
+                                    </p>
                                 </div>
                                 {% endif %}
                             </div>
