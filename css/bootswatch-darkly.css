@@ -3776,9 +3776,9 @@
   display: block;
  }
 
- .nav-item:hover .dropdown-menu:hover {
+ /* .nav-item:hover .dropdown-menu:hover {
   display: block;
- }
+ } */
 
  .dropdown-menu[data-bs-popper] {
    top: 100%;

@@ -9,12 +9,25 @@
                         Home
                     </a>
                 </li>
-                <li class="nav-item dropdown">
+                <!-- <li class="nav-item dropdown"> -->
                     <!-- <a class="nav-link dropdown-toggle" href="/research" id="researchDropdown" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> -->
-                    <a class="nav-link" href="/research" id="researchDropdownLink" role="button">    
+                    <!-- <a class="nav-link" href="/research" id="researchDropdownLink" role="button">     -->
+                        <!-- Research -->
+                    <!-- </a>
+                    <div class="dropdown-menu" aria-labelledby="researchDropdown">
+                        {% for project in site.projects %}
+                            {% if project.active == true %}
+                                {% assign project_id = project.basename | split: "." | first %}
+                                <a class="dropdown-item" href="/research/#project-{{ project_id | slugify }}">{{ project.title }}</a>
+                            {% endif %}
+                        {% endfor %}
+                    </div>
+                </li> -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link" href="/research" id="researchDropdownLink" role="button">
                         Research
                     </a>
-                    <div class="dropdown-menu" aria-labelledby="researchDropdown">
+                    <div class="dropdown-menu" aria-labelledby="researchDropdownLink">
                         {% for project in site.projects %}
                             {% if project.active == true %}
                                 {% assign project_id = project.basename | split: "." | first %}
