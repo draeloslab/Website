@@ -3300,6 +3300,11 @@ textarea.form-control-lg {
   border: var(--bs-dropdown-border-width) solid var(--bs-dropdown-border-color);
   border-radius: var(--bs-dropdown-border-radius);
 }
+
+.nav-item:hover .dropdown-menu {
+  display: block;
+ }
+
 .dropdown-menu[data-bs-popper] {
   top: 100%;
   left: 0;
