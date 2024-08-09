@@ -13,3 +13,19 @@
                 </p>
             </div>
         </div>
+
+        {% if project.title == "Funding" %}
+        <div class="row gx-4 mt-5 pt-5">
+            <div class="col-lg-12">
+                <h2>Funding Sources</h2>
+            </div>
+        </div>
+        <div class="row gx-4 mt-5 pt-5">
+            <div class="col-lg-12 text-center">
+                <img class="img img-fluid mb-4 mx-auto d-block" src="{{ page.image }}" alt="Funding Image" />
+            </div>
+            <div class="col-lg-12 text-center">
+                {% include "funding.html" %}
+            </div>
+        </div>
+        {% endif %}

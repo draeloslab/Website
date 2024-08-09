@@ -20,6 +20,14 @@ permalink: /research/
     </div>
 </section>
 
+<section>
+    <div class="container px-4">
+        <div id="project-funding" class="project-section">
+            {% include project.html %}
+        </div>
+    </div>
+</section>
+
 {% assign projects = site.projects | where: "active", "false" | sort: "order" %}
 {% if projects.size > 0 %}
 <section>
