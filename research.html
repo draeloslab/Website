@@ -20,6 +20,7 @@ permalink: /research/
     </div>
 </section>
 
+{% assign projects = site.projects | where: "type", "funding" %}
 <section>
     <div class="container px-4">
         <div class="row gx-4" >
@@ -28,7 +29,7 @@ permalink: /research/
             </div>
         </div>
         <div id="project-funding" class="project-section">
-            {% include funding.html %}
+            {% include project.html %}
         </div>
     </div>
 </section>
