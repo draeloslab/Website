@@ -1,10 +1,15 @@
 ---
 title: "Real-time BCI with neural stimulations"
-image: /img/bci-jake-research.png
+image: /img/bci-research.png
 active: true
 order: 1
 ---
 We develop models for real-time analysis of signals for brain-computer interfaces that incorporate neural stimulations. 
 In collaboration with the [Chestek Lab](https://chestekresearch.engin.umich.edu), we use a markerless deep learning based tracking tool called [DeepLabCut](https://www.nature.com/articles/s41593-018-0209-y) (Mathis, 2018) to automatically extract joint positions of non-human primates. 
 We've used this system to analyze the effects of fatigue in functional electrical stimulation and characterized its structured stimulation-response relationships. 
-We aim to integrate this system with existing brain-computer interface paradigms and to automatically optimize high-dimensional stimulation patterns in real time.
+We aim to integrate this system with existing brain-computer interface paradigms and to automatically optimize high-dimensional stimulation patterns in real time.<br>
+
+We collaborate with the Chestek lab to investigate various BCI stabilization methods. 
+We hypothesize that by aligning components of BCI decoders across time, decoding performance can be improved. 
+We use [proSVD](https://github.com/pearsonlab/proSVD) to extract latent representations of neural data that are stable across sequential time points, then use Procrustes analysis to align these representations across days in order to create latent spaces that are stable across both short and long timescales. 
+By training and running a decoding model using these modified datasets, we aim to improve the long term stability of BCI decoders, thus reducing or eliminating the need for frequent re-calibration.
