@@ -10,3 +10,5 @@
   link: /news/
 - name: Wiki
   link: https://github.com/draeloslab/wiki/wiki
+- name: Contact Us
+  link: /contact/
