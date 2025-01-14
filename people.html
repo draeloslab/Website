@@ -51,8 +51,14 @@ permalink: /people/
         <ul>
         {% for person in persons %}
             <li>
-                {{ person.name }} &mdash; {{ person.role }} &mdash; {{ person.current }}
+            {{ person.name }} &mdash; {{ person.role }} 
+            {% if person.current and person.current != "" %}
+                &mdash; {{ person.current }}
+            {% endif %}
             </li>
+            <!-- <li>
+                {{ person.name }} &mdash; {{ person.role }} &mdash; {{ person.current }}
+            </li> -->
         {% endfor %}
         </ul>
     </div>
