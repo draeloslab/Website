@@ -38,7 +38,6 @@ permalink: /people/
     </div>
 </section>
 
-{% assign role_order = site.data.roles %}
 {% assign persons = site.persons | sort: "name" | where: "active", "false" %}
 
 {% if persons.size > 0 %}
@@ -50,18 +49,13 @@ permalink: /people/
             </div>
         </div>
         <ul>
-        {% assign sorted_by_role = sorted_persons | sort: "role" | map: "role" %}
-        {% for person in sorted_by_role %}
-            {% assign role_index = role_order | index: person.role %}
+        {% for person in persons %}
             <li>
                 {{ person.name }} &mdash; {{ person.role }} 
                 {% if person.current and person.current != "" %}
                     &mdash; {{ person.current }}
                 {% endif %}
             </li>
-            <!-- <li>
-                {{ person.name }} &mdash; {{ person.role }} &mdash; {{ person.current }}
-            </li> -->
         {% endfor %}
         </ul>
     </div>
