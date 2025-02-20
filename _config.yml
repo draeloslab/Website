@@ -7,6 +7,6 @@ collections:
   news:
 
 scholar:
-  style: _bibliography/chicago.cls
+  style: _bibliography/apa.csl
   sort_by: year,month,day,authors
   order: descending
