@@ -7,7 +7,7 @@ collections:
   news:
 
 scholar:
-  style: _bibliography/apa.csl
+  style: apa
+  csl:  _bibliography/apa.csl
   sort_by: year,month,day,authors
   order: descending
-  bibliography_list: false
