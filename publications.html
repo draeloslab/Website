@@ -7,11 +7,18 @@ permalink: /publications/
     <div class="container px-4">
         <div class="row gx-4">
             <div class="col-lg-12">
-                <h1>Selected Publications</h1>
+                <h2> Recent Work </h2>
 
                 <!-- <h3>Journal</h3> -->
                 <div class="bibliography">
-                    {% bibliography --query @article %}
+                    {% bibliography --query "year >= 2024" %}
+                </div>
+
+                <h2> Prior Work </h2>
+
+                <!-- <h3>Journal</h3> -->
+                <div class="bibliography">
+                    {% bibliography --query "year < 2024" %}
                 </div>
                 
 
