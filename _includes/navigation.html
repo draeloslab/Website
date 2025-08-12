@@ -14,7 +14,7 @@
                         Research
                     </a>
                     <div class="dropdown-menu" aria-labelledby="researchDropdownLink">
-                        {% assign projects = site.projects | where: "active", "true" | sortL "order %}
+                        {% assign projects = site.projects | where: "active", "true" | sort: "order %}
                         {% for project in projects %}
                             {% assign project_id = project.basename | split: "." | first %}
                                 <a class="dropdown-item" href="/research/#project-{{ project_id }}">{{ project.title }}</a>
