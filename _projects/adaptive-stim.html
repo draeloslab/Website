@@ -4,8 +4,10 @@ image: /img/adaptive-stim.png
 active: true
 order: 1
 ---
-We investigate techniques for efficient modeling and computation of latent spaces in neural and behavioral data.
-We hypothesize that the relationship between neural circuitry and behavior is mediated through low-dimensional dynamical patterns embedded in the neural activity of the brain. 
-The adaptive latent project aims to extract and analyze these patterns, or latent variables, as they unfold using streaming machine learning algorithms, like [Bubblewrap](http://arxiv.org/abs/2108.13941).
-Constructing these latents in real-time will also allow us to model and design stimulations which we can use to test causal hypotheses about the latent variables we discover, both in-house experiements 
-and in collaboration with experimentalists.<br>
+We develop new models of low-dimensional neural and behavioral data through manifold construction and adaptation during diverse tasks or stimulus conditions. 
+While many latent space models are fit after a recording is over, we instead focus on the real-time domain to learn ongoing latent dynamics as data are acquired, and to learn response maps for how these dynamics are perturbed under arbitrary stimuli. 
+We also develop new constrained optimization methods to determine best high-dimensional stimulation patterns to drive neural dynamics in latent spaces.<br>
+
+<small><i>Figure:(Left) We simulate neural responses to photostimulation events marked by red lines.
+    (Right) These stimulation patterns drive latent neural dynamics along the first latent dimension.
+</i></small>
