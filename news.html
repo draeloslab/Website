@@ -8,7 +8,7 @@ permalink: /news/
   <div class="container">
     <h1>News</h1>
 
-    <div class="row">
+    <div class="row gx-2">
       <!-- LEFT COLUMN: Bluesky embeds only -->
       <div class="col-lg-6">
         <!-- Bluesky embed script (only once per page) -->
@@ -28,6 +28,7 @@ permalink: /news/
 
       <!-- RIGHT COLUMN: your existing news include -->
       <div class="col-lg-6">
+        <h2 class="mb-3">Lab Updates</h2>
         {% assign sorted_news = site.news | sort: 'date' | reverse %}
         {% for news in sorted_news %}
           {% include news.html news=news %}
@@ -36,21 +37,3 @@ permalink: /news/
     </div>
   </div>
 </section>
-
-<!-- <section>
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-12">
-                <h1>News</h1>
-                <!-- <h2><u>Lab Updates</u></h2> -->
-                <!-- {% assign sorted_news = site.news | sort: 'date' | reverse %} -->
-                <!-- {% assign counter = 0 %} -->
-                <!-- {% for news in sorted_news %} -->
-                        <!-- {% include news.html news=news %} -->
-                        <!-- {% assign counter = counter | plus: 1 %}  -->
-                         <!-- content=news.content date=news.date title=news.title image=news.image %} -->
-                <!-- {% endfor %}
-            </div>
-        </div>
-    </div>
-</section> --> 
