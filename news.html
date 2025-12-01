@@ -3,20 +3,54 @@ layout: default
 title: News
 permalink: /news/
 ---
+
 <section>
+  <div class="container">
+    <h1>News</h1>
+
+    <div class="row">
+      <!-- LEFT COLUMN: Bluesky embeds only -->
+      <div class="col-lg-6">
+        <!-- Bluesky embed script (only once per page) -->
+        <script src="https://embed.bsky.app/static/embed.js" async></script>
+
+        {% assign bluesky_items = site.bluesky %}
+        {% for post in bluesky_items %}
+          <div class="mb-4">
+            <div
+              class="bluesky-embed"
+              data-bluesky-uri="{{ post.bsky_uri }}"
+              data-bluesky-from-url="{{ post.bsky_url }}">
+            </div>
+          </div>
+        {% endfor %}
+      </div>
+
+      <!-- RIGHT COLUMN: your existing news include -->
+      <div class="col-lg-6">
+        {% assign sorted_news = site.news | sort: 'date' | reverse %}
+        {% for news in sorted_news %}
+          {% include news.html news=news %}
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- <section>
     <div class="container">
         <div class="row">
             <div class="col-lg-12">
                 <h1>News</h1>
                 <!-- <h2><u>Lab Updates</u></h2> -->
-                {% assign sorted_news = site.news | sort: 'date' | reverse %}
+                <!-- {% assign sorted_news = site.news | sort: 'date' | reverse %} -->
                 <!-- {% assign counter = 0 %} -->
-                {% for news in sorted_news %}
-                        {% include news.html news=news %}
+                <!-- {% for news in sorted_news %} -->
+                        <!-- {% include news.html news=news %} -->
                         <!-- {% assign counter = counter | plus: 1 %}  -->
                          <!-- content=news.content date=news.date title=news.title image=news.image %} -->
-                {% endfor %}
+                <!-- {% endfor %}
             </div>
         </div>
     </div>
-</section>
+</section> --> 

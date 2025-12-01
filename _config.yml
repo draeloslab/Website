@@ -5,6 +5,9 @@ collections:
   projects:
   persons:
   news:
+    output: true
+  bluesky:
+    output: false
 
 scholar:
   style: apa
