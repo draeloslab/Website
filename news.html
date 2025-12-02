@@ -5,13 +5,13 @@ permalink: /news/
 ---
 
 <section>
-  <div class="container px-lg-0">
+  <div class="container px-lg-4">
     <h1>News</h1>
 
-    <div class="row gx-0">
-      <!-- LEFT COLUMN: Bluesky embeds only -->
-      <div class="col-lg-4">
-        <!-- Bluesky embed script (only once per page) -->
+    <div class="row gx-6">
+      <!-- LEFT COLUMN: Bluesky tweets -->
+      <div class="col-lg-5">
+  
         <script src="https://embed.bsky.app/static/embed.js" async></script>
 
         {% assign bluesky_items = site.bluesky %}
@@ -26,8 +26,9 @@ permalink: /news/
         {% endfor %}
       </div>
 
-      <!-- RIGHT COLUMN: your existing news include -->
-      <div class="col-lg-8">
+      <!-- RIGHT COLUMN: lab news  -->
+      <div class="col-lg-7">
+      <!-- <h2>Lab Updates</h2> -->
         {% assign sorted_news = site.news | sort: 'date' | reverse %}
         {% for news in sorted_news %}
           {% include news.html news=news %}

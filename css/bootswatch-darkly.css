@@ -952,6 +952,16 @@
    --bs-gutter-y: 3rem;
  }
 
+ .g-6,
+ .gx-6 {
+   --bs-gutter-x: 7.5rem;
+ }
+
+ .g-6,
+ .gy-6 {
+   --bs-gutter-y: 7.5rem;
+ }
+
  @media (min-width: 576px) {
    .col-sm {
      -ms-flex: 1 0 0%;
