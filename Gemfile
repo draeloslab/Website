@@ -2,6 +2,8 @@
 
 source "https://rubygems.org"
 
+ruby "3.3.4"
+
 gem "ffi", "~> 1.17"
 gem "jekyll"
 gem "jekyll-scholar", group: :jekyll_plugins
