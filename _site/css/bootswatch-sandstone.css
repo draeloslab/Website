@@ -900,6 +900,18 @@ progress {
   --bs-gutter-y: 3rem;
 }
 
+
+.g-6,
+.gx-6 {
+  --bs-gutter-x: 5.5rem;
+}
+
+.g-6,
+.gy-6 {
+  --bs-gutter-y: 5.5rem;
+}
+
+
 @media (min-width: 576px) {
   .col-sm {
     flex: 1 0 0%;
@@ -3300,6 +3312,11 @@ textarea.form-control-lg {
   border: var(--bs-dropdown-border-width) solid var(--bs-dropdown-border-color);
   border-radius: var(--bs-dropdown-border-radius);
 }
+
+.nav-item:hover .dropdown-menu {
+  display: block;
+ }
+
 .dropdown-menu[data-bs-popper] {
   top: 100%;
   left: 0;

@@ -10,7 +10,7 @@ permalink: /news/
 
     <div class="row gx-6">
       <!-- LEFT COLUMN: Bluesky tweets -->
-      <div class="col-lg-5">
+      <div class="col-lg-4">
   
         <script src="https://embed.bsky.app/static/embed.js" async></script>
 
@@ -27,7 +27,7 @@ permalink: /news/
       </div>
 
       <!-- RIGHT COLUMN: lab news  -->
-      <div class="col-lg-7">
+      <div class="col-lg-8">
       <!-- <h2>Lab Updates</h2> -->
         {% assign sorted_news = site.news | sort: 'date' | reverse %}
         {% for news in sorted_news %}
