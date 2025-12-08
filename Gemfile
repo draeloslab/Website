@@ -2,7 +2,7 @@
 
 source "https://rubygems.org"
 
-ruby "3.3.4"
+ruby "3.2.1"
 
 gem "ffi", "~> 1.17"
 gem "jekyll"
