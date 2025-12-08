@@ -35,29 +35,23 @@
                     </a>
                 </li>
                 <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="researchDropdown" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <a class="nav-link dropdown-toggle" href="/research" id="researchDropdownLink" role="button">
                         Research
                     </a>
-                    <div class="dropdown-menu" aria-labelledby="researchDropdown">
+                    <div class="dropdown-menu" aria-labelledby="researchDropdownLink">
+                        
                         
                             
-                                
-                                <a class="dropdown-item" href="/research/#project-">Bayesian optimization for visual stimuli</a>
-                            
+                                <a class="dropdown-item" href="/research/#project-">Adaptive Stimulation of Neural Dynamics</a>
                         
                             
+                                <a class="dropdown-item" href="/research/#project-">Multimodal Latent Space Modeling</a>
                         
                             
-                        
-                            
-                                
-                                <a class="dropdown-item" href="/research/#project-">Latent neural/behavioral modeling</a>
-                            
-                        
-                            
-                                
                                 <a class="dropdown-item" href="/research/#project-">Real-time BCI with neural stimulations</a>
+                        
                             
+                                <a class="dropdown-item" href="/research/#project-">Bayesian optimization for visual stimuli</a>
                         
                     </div>
                 </li>
@@ -75,8 +69,20 @@
                     </li>
                 
                     <li class="nav-item">
+                        <a class="nav-link " href="/news/">
+                            News
+                        </a>
+                    </li>
+                
+                    <li class="nav-item">
                         <a class="nav-link " href="https://github.com/draeloslab/wiki/wiki">
                             Wiki
+                        </a>
+                    </li>
+                
+                    <li class="nav-item">
+                        <a class="nav-link " href="/contact/">
+                            Contact Us
                         </a>
                     </li>
                 
@@ -113,66 +119,151 @@
         
             
             <div id="project-" class="project-section">
-                        <div class="row gx-4 mt-5">
+                        <div id="project-/projects/adaptive-stim" class="row gx-4 mt-5 pt-2">
             <div class="col-lg-12">
-                <h3>Bayesian optimization for visual stimuli</h3>
+                <h3>Adaptive Stimulation of Neural Dynamics</h3>
             </div>
         </div>
         <div class="row gx-4 mt-2">
-            <div class="col-lg-6 align-self-center">
-                <img class="img img-fluid mb-4 mb-lg-0" src="" />
-            </div>
-            <div class="col-lg-6 align-self-center">
-                <p>
-                    We apply Bayesian Optimization techniques that improve information transfer when using visual stimulation. 
-                </p>
-            </div>
-        </div>
+            
+                <!-- <div class="col-lg-6 align-self-center"> -->
+                <div class="col-lg-6 align-self-center">
+                    <img class="img img-fluid img-research mb-4 mb-lg-0" src="/img/adaptive-stim.png" />
+                </div>
+                <div class="col-lg-6 align-self-center">
+                    <p><p>We develop new models of low-dimensional neural and behavioral data through manifold construction and adaptation during diverse tasks or stimulus conditions. 
+While many latent space models are fit after a recording is over, we instead focus on the real-time domain to learn ongoing latent dynamics as data are acquired, and to learn response maps for how these dynamics are perturbed under arbitrary stimuli. 
+We also develop new constrained optimization methods to determine best high-dimensional stimulation patterns to drive neural dynamics in latent spaces.<br /></p>
 
+<p><small><i>Figure: (Left) We simulate neural responses to photostimulation events marked by red lines.
+    (Right) These stimulation patterns drive latent neural dynamics along the first latent dimension.
+</i></small></p>
+</p>
+                </div>
+            
+        </div>
             </div>
         
             
             <div id="project-" class="project-section">
-                        <div class="row gx-4 mt-5">
+                        <div id="project-/projects/multimodal-modeling" class="row gx-4 mt-5 pt-2">
             <div class="col-lg-12">
-                <h3>Latent neural/behavioral modeling</h3>
+                <h3>Multimodal Latent Space Modeling</h3>
             </div>
         </div>
         <div class="row gx-4 mt-2">
-            <div class="col-lg-6 align-self-center">
-                <img class="img img-fluid mb-4 mb-lg-0" src="" />
-            </div>
-            <div class="col-lg-6 align-self-center">
-                <p>
-                    We investigate techniques for efficient modeling and computation of latent spaces in neural and behavioral data.
-                </p>
-            </div>
-        </div>
+            
+                <!-- <div class="col-lg-6 align-self-center"> -->
+                <div class="col-lg-6 align-self-center">
+                    <img class="img img-fluid img-research mb-4 mb-lg-0" src="/img/multimodal-modeling.png" />
+                </div>
+                <div class="col-lg-6 align-self-center">
+                    <p><p>We work on multimodal integration and probabilistic models to uncover latent factors across neural, genetic, and behavioral datasets. 
+In collaboration with the <a href="https://kaczorowski.lab.medicine.umich.edu/">Kaczorowski Lab</a>, we are developing new variational autoencoder architectures to identify novel factors underlying cognitive resilience in Alzheimer’s disease. 
+We also develop trajectory modeling techniques to propose novel interventions (genetic, environmental) based on structured latent spaces.<br /></p>
 
+<p><small><i> Figure: (Left) Distributions of data projected along a phenotypic axis in our learned latent space shows the spectrum of cognitive resilience.
+    (Right) Cognitive metrics (CFM) can be continously generated along a path from susceptible to resilient (solid) or vice versa (dashed).
+</i></small></p>
+</p>
+                </div>
+            
+        </div>
             </div>
         
             
             <div id="project-" class="project-section">
-                        <div class="row gx-4 mt-5">
+                        <div id="project-/projects/real-time-BCI" class="row gx-4 mt-5 pt-2">
             <div class="col-lg-12">
                 <h3>Real-time BCI with neural stimulations</h3>
             </div>
         </div>
         <div class="row gx-4 mt-2">
-            <div class="col-lg-6 align-self-center">
-                <img class="img img-fluid mb-4 mb-lg-0" src="" />
+            
+                <!-- <div class="col-lg-6 align-self-center"> -->
+                <div class="col-lg-6 align-self-center">
+                    <img class="img img-fluid img-research mb-4 mb-lg-0" src="/img/bci-research.png" />
+                </div>
+                <div class="col-lg-6 align-self-center">
+                    <p><p>We develop models for real-time analysis of signals for brain-computer interfaces that incorporate neural stimulations. 
+In collaboration with the <a href="https://chestekresearch.engin.umich.edu">Chestek Lab</a>, we use a markerless deep learning based tracking tool called <a href="https://www.nature.com/articles/s41593-018-0209-y">DeepLabCut</a> to automatically extract positions and calculate joint positions of non-human primates. 
+We aim to integrate this system with existing brain-computer interface paradigms and to automatically optimize high-dimensional stimulation patterns in real time.<br /></p>
+
+<p>We also examine latent representations of neural data that are stable across sequential time points, and design new alignment methods for these representations across days to create latent spaces that are stable across both short and long timescales. 
+By training and running a decoding model using these modified datasets, we aim to improve the long term stability of BCI decoders, thus reducing or eliminating the need for frequent re-calibration.<br /></p>
+
+<p><small><i> Figure: (Top) Experimental setup with multiple camera views. Processing speeds for inferring finger and wrist angles are faster than image acquisition. The map of reachable poses observed from user-selected stimulation patterns agrees with our simulated model.
+    (Bottom) Diagram of workflow for finding and aligning latent representations of neural data for BCI decoding.
+</i></small></p>
+</p>
+                </div>
+            
+        </div>
             </div>
-            <div class="col-lg-6 align-self-center">
-                <p>
-                    We develop models for real-time analysis of signals for brain-computer interfaces that incorporate neural stimulations.
-                </p>
+        
+            
+            <div id="project-" class="project-section">
+                        <div id="project-/projects/bayes-opt" class="row gx-4 mt-5 pt-2">
+            <div class="col-lg-12">
+                <h3>Bayesian optimization for visual stimuli</h3>
             </div>
         </div>
+        <div class="row gx-4 mt-2">
+            
+                <!-- <div class="col-lg-6 align-self-center"> -->
+                <div class="col-lg-6 align-self-center">
+                    <img class="img img-fluid img-research mb-4 mb-lg-0" src="/img/bayes-opt.png" />
+                </div>
+                <div class="col-lg-6 align-self-center">
+                    <p><p>We apply machine learning and Bayesian Optimization techniques to estimate neural responses to high-dimensional visual stimuli in real-time.
+This approach adaptively selects the next stimulus to test, potentially speeding up results exponentially. In collaboration with the <a href="https://www.savierlab.com/">Savier</a>, <a href="https://www.burgesslab.org/">Burgess</a>, 
+and <a href="https://www.naumannlab.org/">Naumann</a> labs, we use our streaming software platform,  <i>improv</i> (<a href="https://www.biorxiv.org/content/10.1101/2021.02.22.432006v2">preprint</a>, <a href="https://github.com/project-improv/improv/tree/main">Github</a>) to run adaptive experiements where we can gain insights into the current 
+brain state in real-time and use this information to dynamically adjust an experiment while data collection is ongoing. 
+By briding the gap between simplistic and complex stimulus spaces, these methods could provide new insights into how sensory stimuli are represented in the brains of behaving animals. <br /></p>
 
+<p><small><i> Figure: (Top) Example 2D slices from a 4-dimensional tuning curve of a V1 neuron. (Bottom) Processing speeds for image processing, tuning curve analysis, and optimization for our real-time system.</i></small></p>
+</p>
+                </div>
+            
+        </div>
             </div>
         
     </div>
 </section>
+
+
+<section>
+    <div class="container px-4">
+        <div class="row gx-4">
+        </div>
+        
+        <div id="project-/projects/funding" class="project-section">
+                    <div id="project-/projects/funding" class="row gx-4 mt-5 pt-2">
+            <div class="col-lg-12">
+                <h3>Funding Sources</h3>
+            </div>
+        </div>
+        <div class="row gx-4 mt-2">
+            
+                <div class="col-lg-12 text-center">
+                    <img class="img img-fluid img-research mb-4 mb-lg-0" src="/img/research-funding.png" />
+                </div>
+                <div class="col-lg-12">
+                    <p><span>
+    <li> Univeristy of Michigan Research Scout Award </li>
+    <li> 2024 Sloan Fellowship in Neuroscience </li>
+    <li> Burroughs Wellcome Fund </li>
+    <li> National Institute On Aging of the National Institutes of Health under Award Number R01AG092459 </li>
+</span>
+</p>
+                </div>
+            
+        </div>
+        </div>
+        
+    </div>
+</section>
+
 
 
 
@@ -186,45 +277,47 @@
         
             
             <div id="project-" class="project-section">
-                        <div class="row gx-4 mt-5">
+                        <div id="project-/projects/bubblewrap" class="row gx-4 mt-5 pt-2">
             <div class="col-lg-12">
                 <h3>Bubblewrap: Online tiling and real-time flow prediction on neural manifolds</h3>
             </div>
         </div>
         <div class="row gx-4 mt-2">
-            <div class="col-lg-6 align-self-center">
-                <img class="img img-fluid mb-4 mb-lg-0" src="/img/bubblewrap.png" />
-            </div>
-            <div class="col-lg-6 align-self-center">
-                <p>
-                    We developed a new method for approximating dynamics as a probability flow between discrete tiles on a low-dimensional manifold.
+            
+                <!-- <div class="col-lg-6 align-self-center"> -->
+                <div class="col-lg-6 align-self-center">
+                    <img class="img img-fluid img-research mb-4 mb-lg-0" src="/img/bubblewrap.png" />
+                </div>
+                <div class="col-lg-6 align-self-center">
+                    <p><p>We developed a new method for approximating dynamics as a probability flow between discrete tiles on a low-dimensional manifold.
 The model can be trained quickly and retains predictive performance many time steps into the future, and is fast enough to serve as a component of closed-loop causal experiments in neuroscience.
-Our recent preprint on this work can be found <a href="https://arxiv.org/abs/2108.13941">here</a>.
-                </p>
-            </div>
+Our recent preprint on this work can be found <a href="https://arxiv.org/abs/2108.13941">here</a>.</p>
+</p>
+                </div>
+            
         </div>
-
             </div>
         
             
             <div id="project-" class="project-section">
-                        <div class="row gx-4 mt-5">
+                        <div id="project-/projects/binary-stim" class="row gx-4 mt-5 pt-2">
             <div class="col-lg-12">
                 <h3>Online neural connectivity estimation with noisy group testing</h3>
             </div>
         </div>
         <div class="row gx-4 mt-2">
-            <div class="col-lg-6 align-self-center">
-                <img class="img img-fluid mb-4 mb-lg-0" src="/img/binary_stim.png" />
-            </div>
-            <div class="col-lg-6 align-self-center">
-                <p>
-                    How can we get connectivity between large systems of neurons in vivo?
-Using stimulations of small ensembles and a statistical method called group testing, we show in our recent <a href="https://proceedings.neurips.cc/paper/2020/hash/531d29a813ef9471aad0a5558d449a73-Abstract.html">paper</a> that this is now feasible even in networks of up to 10 thousand neurons.
-                </p>
-            </div>
+            
+                <!-- <div class="col-lg-6 align-self-center"> -->
+                <div class="col-lg-6 align-self-center">
+                    <img class="img img-fluid img-research mb-4 mb-lg-0" src="/img/binary_stim.png" />
+                </div>
+                <div class="col-lg-6 align-self-center">
+                    <p><p>How can we get connectivity between large systems of neurons in vivo?
+Using stimulations of small ensembles and a statistical method called group testing, we show in our recent <a href="https://proceedings.neurips.cc/paper/2020/hash/531d29a813ef9471aad0a5558d449a73-Abstract.html">paper</a> that this is now feasible even in networks of up to 10 thousand neurons.</p>
+</p>
+                </div>
+            
         </div>
-
             </div>
         
     </div>
@@ -233,8 +326,10 @@ Using stimulations of small ensembles and a statistical method called group test
 
         <!-- Footer-->
         <footer class="py-4 mt-5">
-    <div class="container px-4"><p class="m-0 text-center">Copyright &copy; 2023 by <a href="https://draelos.github.io/">Anne Draelos</a>
-    </p></div>
+    <div class="container px-4">
+        <p class="m-0 text-center">Copyright &copy; 2025 by <a href="https://draelos.github.io/">Anne Draelos</a></p>
+        <p class="m-0 text-center">Last Updated: December 2025</p>
+    </div>
 </footer>
         <!-- Bootstrap core JS-->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
