@@ -29,10 +29,29 @@ permalink: /news/
       <!-- RIGHT COLUMN: lab news  -->
       <div class="col-lg-8">
       <!-- <h2>Lab Updates</h2> -->
+        {% assign cutoff = "2025-01-01" | date: "%s" %}
         {% assign sorted_news = site.news | sort: 'date' | reverse %}
+        {%- comment -%} 2025+ visible {%- endcomment -%}
         {% for news in sorted_news %}
-          {% include news.html news=news %}
+          {% assign ts = news.date | date: "%s" %}
+          {% if ts >= cutoff %}
+            {% include news.html news=news %}
+          {% endif %}
         {% endfor %}
+
+        {%- comment -%} Archived (<= 2024), hidden behind click {%- endcomment -%}
+        <details  class='news-archive'>
+          <summary>Archived Posts</summary>
+
+          <div class="mt-3">
+            {% for news in sorted_news %}
+              {% assign ts = news.date | date: "%s" %}
+              {% if ts < cutoff %}
+                {% include news.html news=news %}
+              {% endif %}
+            {% endfor%}
+          </div>
+        </details>
       </div>
     </div>
   </div>
