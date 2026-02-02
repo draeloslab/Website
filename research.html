@@ -3,8 +3,27 @@ layout: default
 title: Research
 permalink: /research/
 ---
+
+<section class="mb-1">
+    <div class="container px-4">
+        <div class="row gx-4">
+            <div class="col-lg-13">
+                <p class="lead text-justify-custom">
+                    We develop statistically efficient methods for real-time and adaptive neuroscience experiments.
+                    We construct latent models from high-dimensional neural, behavioral, genetic, and other data as
+                    a form of simplification (learning underlying patterns) and as a means of combining data across
+                    modalities (multi-modal integration). These models are typically learned in a streaming setting,
+                    one data point at a time, to allow us to track changes in data dynamically across time or
+                    condition. We then also combine these with closed-loop optimization strategies for designing
+                    stimulations in real time, both external (visual) and internal (direct neural perturbations).
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
 {% assign projects = site.projects | where: "active", "true" | sort: "order" %}
-<section>
+<section class="mb-0">
     <div class="container px-4">
         <div class="row gx-4">
             <div class="col-lg-12">
