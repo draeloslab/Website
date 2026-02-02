@@ -2117,6 +2117,7 @@
               </group>
               <text macro="access"/>
               <text macro="publication-history"/>
+              <text variable="note" prefix=". "/>
             </group>
           </else>
         </choose>
