@@ -193,3 +193,8 @@ details.news-more summary {
   .bibliography ol.bibliography > li {
     padding-bottom: 0.75rem !important;
   }
+
+  .lead {
+    font-size: 1.1rem;
+    font-weight: 300;
+  }
