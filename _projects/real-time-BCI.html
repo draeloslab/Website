@@ -1,16 +1,19 @@
 ---
-title: "Real-time BCI with neural stimulations"
-image: /img/bci-research.png
+title: "Optimization of Neural Stimulation with Real-Time Behavioral Feedback"
+image: /img/bci-jake-research.png
 active: true
-order: 3
+order: 4
 ---
 We develop models for real-time analysis of signals for brain-computer interfaces that incorporate neural stimulations. 
-In collaboration with the [Chestek Lab](https://chestekresearch.engin.umich.edu), we use a markerless deep learning based tracking tool called [DeepLabCut](https://www.nature.com/articles/s41593-018-0209-y) to automatically extract positions and calculate joint positions of non-human primates. 
-We aim to integrate this system with existing brain-computer interface paradigms and to automatically optimize high-dimensional stimulation patterns in real time.<br>
+In collaboration with the [Chestek Lab](https://chestekresearch.engin.umich.edu), we use markerless deep
+learning based tracking to automatically extract positions and calculate joint positions of the
+fingers of non-human primates. We use this system to replace physical devices like
+manipulanda during brain-computer interface tasks to allow for freer movements and more
+naturalistic behavior patterns. We also use this system to provide immediate feedback of joint
+angles and finger and wrist positions during functional electrical stimulation (FES) to
+automatically optimize high-dimensional stimulation patterns in real time. <br>
 
-We also examine latent representations of neural data that are stable across sequential time points, and design new alignment methods for these representations across days to create latent spaces that are stable across both short and long timescales. 
-By training and running a decoding model using these modified datasets, we aim to improve the long term stability of BCI decoders, thus reducing or eliminating the need for frequent re-calibration.<br>
-
-<small><i> Figure: (Top) Experimental setup with multiple camera views. Processing speeds for inferring finger and wrist angles are faster than image acquisition. The map of reachable poses observed from user-selected stimulation patterns agrees with our simulated model.
-    (Bottom) Diagram of workflow for finding and aligning latent representations of neural data for BCI decoding.
+<small><i> Figure: (Top) Experimental setup with multiple camera views. Processing speeds for inferring
+    finger and wrist angles are faster than image acquisition. (Bottom) The map of reachable poses
+    observed from user-selected stimulation patterns agrees with our simulated model.
 </i></small>
