@@ -23,7 +23,7 @@ permalink: /research/
 </section>
 
 {% assign projects = site.projects | where: "active", "true" | sort: "order" %}
-<section class="mb-0">
+<section class="mb-0">https://www.google.com/
     <div class="container px-4">
         <div class="row gx-4">
             <div class="col-lg-12">
@@ -31,8 +31,9 @@ permalink: /research/
             </div>
         </div>
         {% for project in projects %}
-            {% assign project_id = project.basename | split: "." | first %}
-            <div id="project-{{ project_id | slugify }}" class="project-section">
+            {% assign anchor_id = project.id | split: "/" | last | slugify %}
+            <!-- {% assign project_id = project.basename | split: "." | first %} -->
+            <div id="project-{{ anchor_id }}" class="project-section">
                 {% include project.html %}
             </div>
         {% endfor %}
