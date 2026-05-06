@@ -1,10 +1,26 @@
 # Draelos Lab Website
 Our website is developed using HTML and then published through Netlify. This README will guide you through how to update website pages, format images, and publish the site. 
 
+* [Updating Pages](#updating-pages)
+    * [Home](#home)
+    * [People](#people) 
+    * [Research](#research) 
+        * [Funding](#funding)
+    * [Publication](#publications)
+    * [News](#news)
+        * [BlueSky Tweets](#bluesky-tweets)
+* [Formatting Images](#formatting-images)
+* [Previewing and Publishing Site](#previewing-and-publishing)
+         
+
+
+<a id="updating-pages"></a>
 ## Updating Pages
+<a id="home"></a>
 ### Home 
 To update the homepage, navigate to the `index.html` script, where you can change the research statement and/or main image. 
 
+<a id="people"></a>
 ### People
 In the `_persons/` folder, create `firstname-lastname.html` file for each new member of the lab. An example script for an active member is shown below: 
 ```
@@ -38,6 +54,7 @@ To change the format of the bio sections, you'll need to modify the `_includes/p
 
 To change the format/layout of the whole page, you'll need to modify the `people.html` file. 
 
+<a id="research"></a>
 ### Research
 In the `_projects/` folder, create a `project-name.html` file to create a new project section. An example script for an active project is shown below: 
 ```
@@ -56,6 +73,7 @@ RESEARCH BLURB...
 ```
 To update an existing project, simply update the research blurb. The `title` is simply the title of the research project. The `photo` should be the path to the project's JPG or PNG file in `/img/`. The `active` status is set to either True or False. The `order` is the actual order of the projects. If you change the order of one project, you will need to subsequently change the order of the other projects. 
 
+<a id="funding"></a>
 #### Funding Section
 The `funding.html` file contains a list of our current funding sources. This will need to be updated any time we receive grants or additional funding. You will also need to update the `/img/research-funding.png` image which is just a compilation of the logos of our funding soures. See [Formatting Images](#formatting-images) section for how to update images. 
 
@@ -64,6 +82,7 @@ To change the format of the research projects section, you'll need to modify the
 
 To change the format/layout of the whole page, you'll need to modify the `research.html` file. 
 
+<a id="publications"></a>
 ### Publications
 In the `_bibliography/` folder, there are two .bib files: `prior_references.bib` and `recent_references.bib`. To add a new publication, update the `recent_references.bib`. An example is shown below: 
 ```
@@ -83,7 +102,7 @@ The bibliography is in APA format.
 #### Page formatting 
 To change the format/layout of the whole page, you'll need to modify the `publications.html` file. 
 
-
+<a id="news"></a>
 ### News
 In the `_news/` folder, you can add `news_post.html` to create a new post. An example script is shown below: 
 ```
@@ -102,6 +121,7 @@ NEWS POST
 
 `title` is the name of the news post. `date` is the date the event occured. `image` is the path to the JPG or PNG file in the `/img/` folder. `image_pos` is where you want to the image to fall: `left`, `right`, `center`
 
+<a id="bluesky"></a>
 #### BlueSky Tweets
 In the `_bluesky/` folder, you can add a tweet.html file to link a tweet to the news page. To link a BlueSky tweet, you simply need the URI and the URL of the tweet. An example is shown below:
 
@@ -119,13 +139,13 @@ To change the format of the news posts, you'll need to modify the `_includes/new
 To change the format/layout of the whole page, you'll need to modify the `news.html` file. 
 
 <a id="formatting-images"></a>
+## Formatting Images
 For formatting images and spacing throughout the whole website, we utilize CSS. We mainly use `css/bootswatch-darkly.css` and  `css/styles.css` to modify existing margins, but you can also add new types. 
 
-#### Formatting Images
 For most cases, it is easy to save square images (1:1 ratios) to the `/img/` folder. It is easier to have an edited/ready-for-viewing image saved than trying to edit/format the image using CSS. 
 
-
-## Previewing and Publishing
+<a id="preview-and-publish"></a>
+## Previewing and Publishing Site
 ### Netlify
 Once you push your changes to Github, [Netlify](https://app.netlify.com/teams/draeloslab/projects) will automatically start processing the deploy. Auto publishing is turned off so that you can check the preview before publishing. See picture below for an example of Netlify's Deploy tab. 
 
