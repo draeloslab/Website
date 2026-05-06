@@ -127,4 +127,6 @@ For most cases, it is easy to save square images (1:1 ratios) to the `/img/` fol
 
 ## Previewing and Publishing
 ### Netlify
-Once you push your changes to Github, [Netlify](https://app.netlify.com/teams/draeloslab/projects) will automatically start processing the deploy. Auto publishing is turned off so that you can check the preview before publishing. 
+Once you push your changes to Github, [Netlify](https://app.netlify.com/teams/draeloslab/projects) will automatically start processing the deploy. Auto publishing is turned off so that you can check the preview before publishing. See picture below for an example of Netlify's Deploy tab. 
+
+![netfliy](/img/netlify_example.png)
