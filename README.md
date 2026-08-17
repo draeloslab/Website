@@ -150,3 +150,18 @@ For most cases, it is easy to save square images (1:1 ratios) to the `/img/` fol
 Once you push your changes to Github, [Netlify](https://app.netlify.com/teams/draeloslab/projects) will automatically start processing the deploy. Auto publishing is turned off so that you can check the preview before publishing. See picture below for an example of Netlify's Deploy tab. 
 
 ![netfliy](/img/netlify_example.png)
+
+## Quickstart
+```
+# install rbenv
+# https://www.mikekasberg.com/blog/2020/09/27/set-up-a-ruby-dev-environment.html
+
+# insall ruby according to .ruby_version
+rbenv install 3.2.1
+
+gem install jekyll bundler
+
+bundle install
+
+bundle exec jekyll serve --port 4001
+```
